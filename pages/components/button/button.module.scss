@@ -1,0 +1,151 @@
+@import '/styles/colors.scss';
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 16px;
+  box-sizing: border-box;
+  transition: 0.3s;
+
+  &.lg {
+    height: 52px;
+    padding: 0 32px;
+  }
+
+  &.md {
+    padding: 0 16px;
+    height: 46px;
+  }
+
+  &.sm {
+    padding: 0 24px;
+    height: 32px;
+  }
+
+  &.circle {
+    border-radius: 16px;
+    padding: 20px;
+  }
+
+  &.smCircle {
+    border-radius: 50%;
+    padding: 10px;
+    width: 32px;
+  }
+
+  &.primary {
+    background-color: $primary;
+    &:hover {
+      background-color: $dark-primary;
+    }
+    p {
+      color: $white-text;
+    }
+    svg {
+      fill: $white-text;
+    }
+  }
+
+  &.secondary {
+    background-color: $secondary;
+    &:hover {
+      background-color: $dark-secondary;
+    }
+    p {
+      color: $white-text;
+    }
+    svg {
+      fill: $white-text;
+    }
+  }
+
+  &.lilPrimary {
+    background-color: $primary-background;
+    border: 2px solid $primary-background;
+    &:hover {
+      border: 2px solid $primary;
+    }
+    p {
+      color: $primary;
+    }
+    svg {
+      fill: $primary;
+    }
+  }
+
+  &.soft {
+    background-color: $sub-background-1;
+    &:hover {
+      background-color: $sub-background-2;
+    }
+    p {
+      color: $sub-text-1;
+    }
+    svg {
+      fill: $sub-text-1;
+    }
+  }
+
+  &.ghost {
+    background-color: $main-background;
+    &:hover {
+      background-color: $sub-background-1;
+    }
+    p {
+      color: $sub-text-1;
+    }
+    svg {
+      fill: $sub-text-1;
+    }
+  }
+
+  &.critical {
+    background-color: $critical;
+    &:hover {
+      background-color: $dark-critical;
+    }
+    p {
+      color: $white-text;
+    }
+    svg {
+      fill: $white-text;
+    }
+  }
+
+  &.lilCritical {
+    background-color: $critical-background;
+    border: 2px solid $critical-background;
+    &:hover {
+      border: 2px solid $critical;
+    }
+    p {
+      color: $critical;
+    }
+    svg {
+      fill: $critical;
+    }
+  }
+
+  &.disabled {
+    background-color: $sub-text-light;
+    border: 2px solid $sub-text-light;
+    pointer-events: none;
+    p {
+      color: $white-text;
+    }
+    svg {
+      fill: $white-text;
+    }
+  }
+}
+
+.icon {
+  margin-right: 12px;
+  &.noText {
+    margin-right: 0;
+  }
+}
